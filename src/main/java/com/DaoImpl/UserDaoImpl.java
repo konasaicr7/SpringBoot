@@ -32,8 +32,8 @@ SessionFactory sf;
 		Query<User> q=s.createQuery("from User u  where u.username=:u and u.password=:p");
 		q.setParameter("u", username);
 		q.setParameter("p", password);
-		List<User>slist=q.getResultList();
-		return slist;
+		List<User>slis=q.getResultList();
+		return slis;
 		
 		
 	}
